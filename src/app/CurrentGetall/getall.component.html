@@ -1,0 +1,18 @@
+<button (click) ="GetAll()">GetAll</button><br><br>
+<table style="color: #333; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th style="padding: 15px; background-color: #f2f2f2;">Account Id</th>
+        <th style="padding: 15px; background-color: #f2f2f2;">Balance</th>
+        <th style="padding: 15px; background-color: #f2f2f2;">Interest Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let C of Currents">
+        <td style="padding: 15px;width: 10%; border: 1px solid #d5df78;">{{ C.accountId }}</td>
+        <td style="padding: 25px; width: 15%;border: 1px solid #d5df78;">{{ C. balance }}</td>
+        <td style="padding: 15px; width: 15%;border: 1px solid #d5df78;">{{ C. interestRate}}</td>
+      </tr>
+    </tbody>
+  </table>
+ 

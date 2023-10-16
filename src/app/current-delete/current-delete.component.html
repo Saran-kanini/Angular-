@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="accountId" placeholder="Enter Account Id">
+<button (click) = "deletebyid()">Delete</button>
+<div *ngIf="Current">
+    <h2>Account Id : {{Current.accountId}}</h2>
+    </div>

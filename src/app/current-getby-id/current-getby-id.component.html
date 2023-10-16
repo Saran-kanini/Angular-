@@ -1,0 +1,36 @@
+
+<!-- <input type="text" [(ngModel)]="accountId" placeholder="Enter Account Id">
+<button (click) = "Getbyid()">Enter ID</button>
+<div *ngIf="Currents">
+    <h2>Account Id : {{Currents.accountId}}</h2>
+    <h2>Balance : {{Currents.balance}}</h2>
+    <h2>Interest Rate : {{Currents.interestRate }}</h2>   
+</div> -->
+
+<input type="text" [(ngModel)]="accountId" placeholder="Enter Account Id">
+<button (click)="Getbyid()">Enter ID</button>
+
+<div *ngIf="Currents" class="table-container">
+  <table class="custom-table">
+    <tbody>
+      <tr>
+        <th>Account Id:</th>
+        <td>{{Currents.accountId}}</td>
+      </tr>
+      <tr>
+        <th>Balance:</th>
+        <td>{{Currents.balance}}</td>
+      </tr>
+      <tr>
+        <th>Interest Rate:</th>
+        <td>{{Currents.interestRate}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+ 
+ 
+ 
+ 
